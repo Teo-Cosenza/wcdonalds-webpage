@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>	
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link href='https://fonts.googleapis.com/css?family=Roboto Slab' rel='stylesheet'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="editar_plato.css" />
+    <title>EDITAR PLATO</title>
+</head>
+<body class="w3-container">
+    <div>  
+        <h2 class="w3-center titulo">EDITAR PLATO</h2>
+    </div>  
+    <div class="w3-display-middle cuadro w3-center w3-card">
+        <form id="compra" name="pasajes">
+            <div>
+                <h3>SELECCIONAR</h3>
+                <br><br>
+                <b>FORMATO</b>
+                <br>
+                <input type="radio" id="botella" name="formato" value="botella">
+                <label for="botella">BOTELLA</label>
+                <input type="radio" id="lata" name="formato" value="lata">
+                <label for="lata">LATA</label>
+                <input type="radio" id="vaso" name="formato" value="vaso">
+                <label for="vaso">VASO</label>
+                <br><br><br>
+                <b>TAMAÑO</b>
+                <br>
+                <input type="radio" id="grande" name="tamaño" value="grande">
+                <label for="grande">GRANDE</label>
+                <input type="radio" id="pequeño" name="tamaño" value="pequeño">
+                <label for="pequeño">PEQUEÑO</label>
+                <br><br><br>
+            </div>         
+        </form>
+        <button id="myBtn" class="button w3-round-xxlarge">CONTINUAR</button>     
+    </div>
+<!-- The Modal -->
+    <div id="myModal" class="modal">     
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">&times;</span>
+                <p class="head w3-center">SE HA AÑADIDO AL CARRITO</p>
+            </div>
+            <div class="modal-footer w3-center">
+                <a href="menu.html">
+                    <button class="button_modal w3-round-xxlarge">SEGUIR COMPRANDO</button>
+                </a>
+                <a href="carrito.html">
+                    <button class="button_modal w3-round-xxlarge">IR AL CARRITO</button>
+                </a>
+            </div>
+        </div>       
+    </div>
+    <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+        
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
+        
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+        
+        // When the user clicks the button, open the modal 
+        btn.onclick = function() {
+          modal.style.display = "block";
+        }
+        
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+          modal.style.display = "none";
+        }
+        
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+          if (event.target == modal) {
+            modal.style.display = "none";
+          }
+        }
+    </script>
+</body>

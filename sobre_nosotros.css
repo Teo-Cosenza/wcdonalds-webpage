@@ -1,0 +1,40 @@
+body{
+    background-image: url('imagenes/bg_index.jpg');
+    background-size: cover;
+    min-height: 100%;
+}
+
+#imgWcdonalds{
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+.cuadro{
+    margin: 0 auto;
+    width: 60%;
+    padding: 30px; 
+    border-radius: 25px;
+    color:#283618;
+    background-color: #fefae0;
+}
+
+.title{
+    font-family: 'Poppins';
+}
+
+
+.button_volver{ 
+    margin-left: 15px;
+    width: 130%;
+    height: 40px;
+    font-family: 'Roboto Slab';
+    font-size: 100%;
+    margin-bottom: 15px;
+    background-color:#fefae0;
+    color: #283618;
+    border: 0px solid white;
+  }
+  
+  .button_volver:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  }

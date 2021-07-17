@@ -1,0 +1,100 @@
+body{
+    background-color: #EBB25E;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;   
+}
+
+.titulo{
+    font-family: 'Roboto Slab';
+    background-color: #7299BB;
+    color: white;
+    border-bottom: 2px solid white;
+    border-left: 2px solid white;
+    border-right: 2px solid white;
+}
+
+.cuadro{
+    margin: 0 auto;
+    width: 60%;
+    padding: 30px; 
+    border-radius: 25px;
+    color:white;
+    background-color: #7299BB;
+    font-family: 'Roboto Slab';
+}
+
+.head{
+    font-family: 'Roboto Slab';
+    font-size: 25px;
+    font-weight: auto;
+    color: #7299BB;
+}
+
+.button{
+    width: 17%;
+	height: 42px;
+	font-family: 'Roboto Slab';
+	font-weight: 10;
+	font-size: 110%;
+	background-color:white;
+	color: #3B77A3;
+	border: 2px solid #4985b1;
+}
+
+button:hover {
+    box-shadow: 0 5px 5px 0 #3B77A3, 0 5px 5px 0 #3B77A3;
+  }
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+  
+  /* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+  
+  /* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+  
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.button_modal{
+    width: 17%;
+	height: 42px;
+	font-family: 'Roboto Slab';
+	font-weight: 10;
+	font-size: 110%;
+    margin-top: 20px;
+    margin-left: 5px;
+	background-color:white;
+	color: #3B77A3;
+	border: 2px solid #4985b1;
+}
+
+.button_modal:hover {
+    box-shadow: 0 5px 5px 0 #3B77A3, 0 5px 5px 0 #3B77A3;
+  }
